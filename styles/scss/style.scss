@@ -30,7 +30,6 @@ nav {
 main {
     width: 98%;
     height: 92%;
-    /* margin: 0 auto; */
 }
 
 .hamburger {
@@ -41,7 +40,7 @@ main {
 
 .hamburger.active {
     transition: all ease-in-out .5s;
-    background-color: rgb(73, 73, 73);
+    background-color: rgb(70, 70, 70);
 }
 
 .hamburger .line {
@@ -67,11 +66,13 @@ main {
 }
 
 #menu {
-    display: inline-block;
+    padding-top: 70px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     height: 50%;
     width: 300px;
-    background-color: white;
+    background-color: #222222;
     opacity: 0;
     transition: .4s;
     transform: scale(0);
@@ -79,6 +80,51 @@ main {
 }
 
 #menu.active {
-    opacity: .5;
+    opacity: 1;
     transform: none;
+}
+
+#menu ul {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: start;
+    list-style-type: none;
+
+    height: 100%;
+
+    li {
+        margin: 10px 10px;
+
+        a {
+            position: relative;
+            display: block;
+            text-decoration: none;
+            color: #ecf0f1;
+            text-transform: uppercase;
+            padding: 4px 0;
+            transition: 0.5s;
+
+            &::after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 3px;
+                top: 100%;
+                left: 0;
+                background: #3498db;
+                transition: transform 0.5s;
+                transform: scaleX(0);
+                transform-origin: right;
+            }
+
+            &:hover {
+                color: #969c9c;
+            }
+
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+    }
 }
