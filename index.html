@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <link
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,400,500,700,900&display=swap&subset=chinese-traditional"
+        rel="stylesheet">
     <link href="styles/css/reset.css" rel="stylesheet" type="text/css">
     <link href="styles/css/style.css" rel="stylesheet" type="text/css">
     <script src="scripts/main.js"></script>
@@ -9,25 +12,24 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="nav">
+        <div id="topic">簡介 Profile</div>
         <div class="hamburger" onclick="expendMenu(this)">
             <span class="line"></span>
             <span class="line"></span>
             <span class="line"></span>
         </div>
-        <div id="menu">
+        <div class="menu">
             <ul>
-                <!-- <li><a href="#">簡介 Profile</a></li>
-                <li><a href="#">經歷 Experience</a></li>
-                <li><a href="#">技能 Skill</a></li>
-                <li><a href="#">作品 Project</a></li> -->
-                <li><a href="javascript:void(0)" onclick="subgo()">AAA</a></li>
-                <li><a href="javascript:void(0)" onclick="subgo()">BBBBB</a></li>
-                <li><a href="javascript:void(0)" onclick="subgo()">CC</a></li>
+                <li><a href="javascript:void(0);" onclick="changeTopic(0)">簡介 Profile</a></li>
+                <li><a href="javascript:void(0);" onclick="changeTopic(1)">經歷 Experience</a></li>
+                <li><a href="javascript:void(0);" onclick="changeTopic(2)">技能 Skill</a></li>
+                <li><a href="javascript:void(0);" onclick="changeTopic(3)">作品 Project</a></li>
+                <li><a href="javascript:void(0);" onclick="changeTopic(4)">聯繫 Contact</a></li>
             </ul>
         </div>
     </nav>
-    <main>main</main>
+    <main></main>
 </body>
 
 </html>

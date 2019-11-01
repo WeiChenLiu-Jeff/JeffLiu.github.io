@@ -1,10 +1,11 @@
 function expendMenu(e) {
-    e.classList.toggle("active");
-    document.getElementById("menu").classList.toggle("active");
+    // toggle menu open/close
+    document.getElementById("nav").classList.toggle("active");
 }
 
-function subgo() {
+function changeTopic(topic) {
     // TODO: input option value and change main content.
-    console.log('Option Clicked.');
-    document.getElementById("menu").classList.toggle("active");
+    console.log('Option Clicked：' + topic);
+    // close menu
+    document.getElementById("nav").classList.toggle("active");
 }
