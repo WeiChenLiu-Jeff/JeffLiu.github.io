@@ -52,6 +52,8 @@ nav #topic {
       align-self: center;
   font-size: 2rem;
   font-weight: bold;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
 }
 
 nav .hamburger {
