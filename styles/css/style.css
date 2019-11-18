@@ -157,21 +157,21 @@ nav .menu::-webkit-scrollbar {
   display: none;
 }
 
-.active .line:nth-child(1) {
+nav.active .line:nth-child(1) {
   -webkit-transform: translateY(12px) rotate(45deg);
           transform: translateY(12px) rotate(45deg);
 }
 
-.active .line:nth-child(2) {
+nav.active .line:nth-child(2) {
   opacity: 0;
 }
 
-.active .line:nth-child(3) {
+nav.active .line:nth-child(3) {
   -webkit-transform: translateY(-12px) rotate(-45deg);
           transform: translateY(-12px) rotate(-45deg);
 }
 
-.active .menu {
+nav.active .menu {
   opacity: 1;
   -webkit-transform: none;
           transform: none;

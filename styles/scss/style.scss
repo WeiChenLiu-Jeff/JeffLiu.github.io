@@ -122,26 +122,28 @@ nav {
     .menu::-webkit-scrollbar {
         display: none;
     }
+
+    &.active {
+        .line:nth-child(1) {
+            transform: translateY(12px) rotate(45deg);
+        }
+
+        .line:nth-child(2) {
+            opacity: 0;
+        }
+
+        .line:nth-child(3) {
+            transform: translateY(-12px) rotate(-45deg);
+        }
+
+        .menu {
+            opacity: 1;
+            transform: none;
+        }
+    }
 }
 
-.active {
-    .line:nth-child(1) {
-        transform: translateY(12px) rotate(45deg);
-    }
 
-    .line:nth-child(2) {
-        opacity: 0;
-    }
-
-    .line:nth-child(3) {
-        transform: translateY(-12px) rotate(-45deg);
-    }
-
-    .menu {
-        opacity: 1;
-        transform: none;
-    }
-}
 
 main {
     width: 98%;
