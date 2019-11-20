@@ -143,9 +143,24 @@ nav {
     }
 }
 
-
-
 main {
+    margin-top: 1%;
     width: 98%;
     height: 92%;
+    transition: all .4s ease-in-out;
+
+    #profile_panel,
+    #exp_panel,
+    #skill_panel,
+    #project_panel,
+    #contact_panel {
+        display: none;
+        width: 100%;
+        height: 98%;
+        border: 1px solid white;
+
+        &.active {
+            display: inline-flex;
+        }
+    }
 }

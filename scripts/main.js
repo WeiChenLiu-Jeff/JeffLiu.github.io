@@ -11,7 +11,12 @@ function changeTopic(option) {
 
     topic.style.opacity = 0;
     setTimeout(function () {
-        topic.innerHTML = option.innerHTML;
+        topic.innerHTML = menu[option].title;
         topic.style.opacity = 1;
     }, 500)
+    switchPanel(option);
+}
+
+function switchPanel(option) {
+    
 }
