@@ -132,10 +132,10 @@ nav .menu ul li a::after {
   top: 100%;
   left: 0;
   background: #ffc74d;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
-  transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
   -webkit-transform-origin: right;
@@ -181,26 +181,18 @@ main {
   margin-top: 1%;
   width: 98%;
   height: 92%;
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
-main #profile_panel,
-main #exp_panel,
-main #skill_panel,
-main #project_panel,
-main #contact_panel {
+main .panel {
   display: none;
   width: 100%;
   height: 98%;
   border: 1px solid white;
 }
 
-main #profile_panel.active,
-main #exp_panel.active,
-main #skill_panel.active,
-main #project_panel.active,
-main #contact_panel.active {
+main .panel.active {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
