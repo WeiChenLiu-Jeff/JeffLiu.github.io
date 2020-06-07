@@ -202,7 +202,7 @@ main .panel.active p {
   line-height: 1.4rem;
 }
 
-main #profile_panel {
+main .panel.active#profile_panel {
   width: 100%;
   height: 100%;
   display: -webkit-inline-box;
@@ -219,16 +219,15 @@ main #profile_panel {
       flex-wrap: wrap;
 }
 
-main #profile_panel .description {
+main .panel.active#profile_panel .description {
   width: 50%;
 }
 
-main #profile_panel .avatar {
-  width: 25%;
-  margin-right: 5%;
+main .panel.active#profile_panel .avatar {
+  width: 20%;
 }
 
-main #profile_panel .avatar img {
+main .panel.active#profile_panel .avatar img {
   width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
